@@ -1,0 +1,27 @@
+####################################
+## Usando el repositorio en Github
+####################################
+http://rogerdudler.github.io/git-guide/index.es.html
+
+- Crear el repositorio en Github (por ejemplo Z80)
+
+- Iniciar nuestro repositorio local, en la carpeta que hayamos elegido con:
+	>git init			# crea el repositorio
+	
+	>git add .			# añade todos los archivos
+	
+	>git commit -m "xxxxx" 		# Confirma los cambios en local
+
+	## Añade un nuevo origen (el repositorio remoto) para nuestro repositorio
+	## local
+	>git remote add origin https://github.com/retropcode/Z80.git
+
+	>git push -u origin master	# sube los cambios al repositorio
+					# remoto
+
+	>git pull			# actualiza el repositorio local con
+					# la version remota mas nueva
+
+	>git checkout -- <filename>	# reemplaza los últimos cambios con
+					# el contenido del HEAD
+
