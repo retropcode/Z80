@@ -60,4 +60,16 @@ Se puede usar las instrucciones de 16 bits
 
 Se tienen que utilizar 90 HALT para un tiempo de espera de 0.3sg  
 El laser ocupa los 4 pixeles de 1 byte por tanto se pinta en rojo con 88  
-Para avanzar al menos 5 fotogramas, pintarlo sucesivamente en C000, C001, C002, C003, C005
+Para avanzar al menos 5 fotogramas, pintarlo sucesivamente en C000, C001, C002, C003, C004, C005
+
+La secuencia es la siguiente
+````
+C0 C0 C0 C0 C0 C0 
+00 01 02 03 04 05
+                   
+88 00 00 00 00 00  -  C000 < 88
+00 88 00 00 00 00  -  C000 < 0088
+00 00 88 00 00 00  -  C001 < 0088
+00 00 00 88 00 00  -  C002 < 0088
+00 00 00 00 88 00  -  C003 < 0088
+00 00 00 00 00 88  -  C004 < 0088
