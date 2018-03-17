@@ -52,3 +52,12 @@ E000  * # * *  * * # *  -  +80 +44 +20 +10   +80 +40 +22 +10  -  F4 F2
 E800  · * # #  # # * ·  -  +00 +40 +20 +11   +88 +40 +20 +00  -  73 EC
 ```
 
+## RETO 2.1
+"Laser" de 4 pixeles, que se mueve de 4 en 4 con un retardo de 3ms  
+Se puede usar las instrucciones de 16 bits  
+* ld hl, ff00  
+* ld (ff00),hl  
+
+Se tienen que utilizar 90 HALT para un tiempo de espera de 0.3sg  
+El laser ocupa los 4 pixeles de 1 byte por tanto se pinta en rojo con 88  
+Para avanzar al menos 5 fotogramas, pintarlo sucesivamente en C000, C001, C002, C003, C005
