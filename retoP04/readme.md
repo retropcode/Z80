@@ -109,4 +109,13 @@ C800  · · · ·   · · · ·   · · · ·   # * * *   -  +88 +40 +20 +10   .
 D000  · · · ·   · · · ·   · · · ·   · # * *   -  +00 +44 +20 +10   ...  +80 +40 +20 +10   -  00 00 00 74
 ```
 
+## RETO 2.3
+Bolita de 4x4 pixeles rebotando encima de la A de Amstrad. Emplear movimiento acelarado. Para pintar solo se pueden utilizar las instrucciones  LD HL,xxxx  LD (HL),xx y LD H,xx 
 
+#### Sprite
+```
+C000  · # # ·   -  +00 +44 +22 +00  -  66
+C800  # * * #   -  +88 +40 +20 +11  -  F9
+D000  # * * #   -  +88 +40 +20 +11  -  F9
+D800  · # # ·   -  +00 +44 +22 +00  -  66
+```
