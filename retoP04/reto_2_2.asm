@@ -77,5 +77,25 @@ halt: halt: halt: halt: halt: halt: halt: halt: halt: halt
 halt: halt: halt: halt: halt: halt: halt: halt: halt: halt
 halt: halt: halt: halt: halt: halt: halt: halt: halt: halt
 
+;; Frame 4
+ld hl, #0000     
+ld (#c001), hl 
+ld (#d001), hl
+ld (#c801), hl
+ld hl, #7400
+ld (#c003), hl
+ld (#d003), hl
+ld hl, #F800
+ld (#c803), hl
+
+halt: halt: halt: halt: halt: halt: halt: halt: halt: halt
+halt: halt: halt: halt: halt: halt: halt: halt: halt: halt
+halt: halt: halt: halt: halt: halt: halt: halt: halt: halt
+halt: halt: halt: halt: halt: halt: halt: halt: halt: halt
+halt: halt: halt: halt: halt: halt: halt: halt: halt: halt
+halt: halt: halt: halt: halt: halt: halt: halt: halt: halt
+halt: halt: halt: halt: halt: halt: halt: halt: halt: halt
+halt: halt: halt: halt: halt: halt: halt: halt: halt: halt
+halt: halt: halt: halt: halt: halt: halt: halt: halt: halt
 
 jp start
