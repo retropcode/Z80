@@ -5,39 +5,39 @@ org #8000
 .start
           
 ld hl, #C0A2    ; linea 1
-ld (hl), #FF
-ld hl, #C0A3
-ld (hl), #FF
+ld (hl), #FF    ;   1º byte
+inc l
+ld (hl), #FF    ;   2º byte
 
-ld hl, #C8A2    ; linea 2
-ld (hl), #F0
-ld hl, #C8A3
-ld (hl), #F0
+ld h, #C8       ; linea 2
+ld (hl), #F0    ;   2º byte
+dec l
+ld (hl), #F0    ;   1º byte
 
-ld hl, #D0A2    ; linea 3
-ld (hl), #08
-ld hl, #D0A4
-ld (hl), #00
+ld h, #D0       ; linea 3
+ld (hl), #08    ;   1º byte
+inc l
+ld (hl), #00    ;   2º byte
 
-ld hl, #D8A2    ; linea 4
-ld (hl), #04
-ld hl, #D8A3
-ld (hl), #01
+ld h, #D8       ; linea 4
+ld (hl), #01    ;   2º byte
+dec l
+ld (hl), #04    ;   1º byte
 
-ld hl, #E0A2    ; linea 5
-ld (hl), #02
-ld hl, #E0A3
-ld (hl), #02
+ld h, #E0       ; linea 5
+ld (hl), #02    ;   1º byte
+inc l
+ld (hl), #02    ;   2º byte
 
-ld hl, #E8A2    ; linea 6
-ld (hl), #01
-ld hl, #E8A3
-ld (hl), #04
+ld h, #E8       ; linea 6
+ld (hl), #04    ;   2º byte
+dec l
+ld (hl), #01    ;   1º byte
 
-ld hl, #F0A2    ; linea 7
-ld (hl), #F0
-ld hl, #F0A3
-ld (hl), #78
+ld h, #F0       ; linea 7
+ld (hl), #F0    ;   1º byte
+inc l
+ld (hl), #78    ;   2º byte
 
 .finish
 jr finish
