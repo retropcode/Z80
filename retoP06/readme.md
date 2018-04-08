@@ -36,6 +36,7 @@ E000  · · x ·  · · x ·  -  +00 +00 +02 +00   +00 +00 +02 +00  -  02 02
 E800  · · · x  · x · ·  -  +00 +00 +00 +01   +00 +04 +00 +00  -  01 04
 F000  * * * *  x * * *  -  +80 +40 +20 +10   +08 +40 +20 +10  -  F0 78
 ```
-## Reto 3.2
+
+## Reto 3.2 - Pintar una Línea de Tiles
 Repetir un Tile para llenar una línea completa de pantalla. Hay que utilizar repeticiones y el código de dibujo tiene que ser único. Bonus si el código ocupa menos de 30 bytes y otro Bonus si el tile tiene más de 4 pixeles de alto.
 
