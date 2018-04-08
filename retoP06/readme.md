@@ -23,7 +23,7 @@
     x1xx x1xx = + 44
     1xxx 1xxx = + 88
 
-## Reto P03.1 - Pintar un Tile
+## Reto 3.1 - Pintar un Tile
 Pintar un Tile de 4x4 mínimo, utilizando la instrucción 36 - ld (hl),xx 
 
 ### Tile
@@ -36,3 +36,6 @@ E000  · · x ·  · · x ·  -  +00 +00 +02 +00   +00 +00 +02 +00  -  02 02
 E800  · · · x  · x · ·  -  +00 +00 +00 +01   +00 +04 +00 +00  -  01 04
 F000  * * * *  x * * *  -  +80 +40 +20 +10   +08 +40 +20 +10  -  F0 78
 ```
+## Reto 3.2
+Repetir un Tile para llenar una línea completa de pantalla. Hay que utilizar repeticiones y el código de dibujo tiene que ser único. Bonus si el código ocupa menos de 30 bytes y otro Bonus si el tile tiene más de 4 pixeles de alto.
+
