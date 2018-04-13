@@ -39,3 +39,23 @@ F000  * * * *  x * * *  -  +80 +40 +20 +10   +08 +40 +20 +10  -  F0 78
 ## Reto 3.2 - Pintar una línea de Tiles
 Repetir un Tile para llenar una línea completa de pantalla. Hay que utilizar repeticiones y el código de dibujo tiene que ser único. Bonus si el código ocupa menos de 30 bytes y otro Bonus si el tile tiene más de 4 pixeles de alto.
 
+## Reto 3.3 - Pintar segunda línea de Cielo
+La anterior línea de tiles corresponde al nivel del suelo. Ahora hay que pintar una línea de tiles correspondiente al cielo. Debe de tener 16x4, usar el mismo código anterior. Los pixeles de fondo también hay que pintarlos. Bonus si tiene mas de 4 pixeles de ancho.
+```
+C000  * * * *  * * * *  -  +80 +40 +20 +10   +80 +40 +20 +10  -  F0 F0
+C800  * x * x  * x * x  -  +80 +04 +20 +01   +80 +04 +20 +01  -  A5 A5
+D000  x * x *  x * x *  -  +08 +40 +02 +10   +08 +40 +02 +10  -  5A 5A
+D800  * x x *  * x x *  -  +80 +04 +02 +10   +80 +04 +02 +10  -  96 96
+E000  x x x x  x x x x  -  +08 +04 +02 +01   +08 +04 +02 +01  -  0F 0F
+E800  x · x ·  x · x ·  -  +80 +00 +20 +00   +80 +00 +20 +00  -  A0 A0
+F000  · x · ·  · x · ·  -  +00 +40 +00 +00   +00 +40 +00 +00  -  40 40
+F800  · · · ·  · · · ·  -  +00 +00 +00 +00   +00 +00 +00 +00  -  00 00
+C050  · · · ·  · · · ·  -  +00 +00 +00 +00   +00 +00 +00 +00  -  00 00
+C850  · · · ·  · · · ·  -  +00 +00 +00 +00   +00 +00 +00 +00  -  00 00
+D050  · · · ·  · · · ·  -  +00 +00 +00 +00   +00 +00 +00 +00  -  00 00
+D850  · · · ·  · · · ·  -  +00 +00 +00 +00   +00 +00 +00 +00  -  00 00
+E050  · · · ·  · · · ·  -  +00 +00 +00 +00   +00 +00 +00 +00  -  00 00
+E850  · · · ·  · · · ·  -  +00 +00 +00 +00   +00 +00 +00 +00  -  00 00
+F050  · · · ·  · · · ·  -  +00 +00 +00 +00   +00 +00 +00 +00  -  00 00
+F850  · · · ·  · · · ·  -  +00 +00 +00 +00   +00 +00 +00 +00  -  00 00
+```
